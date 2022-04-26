@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* .header img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+} */
+
+/* Header */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./resources/app.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+
+.download {
+  /* border-style: groove;
+    border-color: black;
+    border-width: 1px; */
+  border-radius: 8px;
+  /* width: 35%; */
+  width: 493px;
+  position: absolute;
+  height: 207px;
+  top: 40%;
+  left: 1%;
+  background-color: rgba(97, 97, 97, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.download:hover {
+  background-color: #000000;
+}
+
+.download hr {
+  width: 90%;
+  border-color: #eeeeee;
+  border-style: solid none none;
+  border-width: 1px 0 0;
+  line-height: 20px 0;
+  margin-left: 23px;
+}
+
+.download h1,
+p {
+  color: #ffffff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.download h1 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+.download p {
+  line-height: 24px;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.download button {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 0 0 10px 23px;
+  background-color: #4caf50;
+  color: white;
+  /* padding: 8px 100px; */
+  border-radius: 4px;
+  border-style: none;
+
+  /* position: relative;
+    left: 33%; */
+}
+
+.download button:hover {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.download button i {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tour {
+  border: 1px groove black;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  background-color: black;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.tour:hover {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.tour a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.tour .fa-solid {
+  font-size: 10px;
+}
+
+/* iPhone 12 Pro (390x844) Responsive */
+@media (max-width: 740px) {
+
+  .download {
+    visibility: hidden;
+  }
+
+  .download button {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: -14%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header {
+    width: 100%;
+  }
+  
+  .tour {
+    position: absolute;
+    top: 30.7%;
+    width: 100%;
+    right: 0%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .intro {
+    display: block !important;
+    position: relative;
+    padding-top: 0;
+  }
+
+  .intro .intro-title {
+    width: 100%;
+    position: relative;
+    margin-bottom: 140px;
+  }
+
+  .intro .intro-img {
+    width: 100%;
+  }
+
+  .intro .intro-title p {
+    margin: 16px 32px 0 0;
+    
+  }
+
+   .intro .intro-title .available-p {
+    position: absolute;
+    top: 100%;
+  }
+
+  .intro .intro-title button {
+    position: absolute;
+    top: 110%;
+    left: 20%;
+  }
+
+  .intro .intro-img img {
+    float: none;
+    padding: 0 7% 20% 7%;
+  }
+
+  .clarity {
+    visibility: hidden;
+    display: block !important;
+  }
+
+  .clarity .clarity-img img {
+    display: none;
+  }
+
+  .clarity .clarity-info {
+    visibility: visible;
+  }
+
+  .clarity .clarity-info .clarity-title, .clarity-subtitle {
+    padding-left: 16px;
+  }
+
+  .clarity .clarity-info p {
+    padding-left: 16px;
+    padding-bottom: 64px;
+  }
+
+  .feature .feature-intro .feature-title {
+    font-weight: normal;
+  }
+
+  .feature-details .grid-feature-details .grid-item {
+    margin: 64px 0 64px 0;
+  }
+
+  .pricing .price-list-container {
+    display: block !important;
+  }
+
+  .pricing .price-list-container .first-list, .pricing .price-list-container .second-list {
+    width: 100%;
+  }
+
+
+  
+}
+
+/* Introduction Section */
+.intro {
+  display: flex;
+  padding-top: 77px;
+  padding-bottom: 64px;
+}
+
+.intro-title {
+  float: left;
+  width: 60%;
+  margin-left: 16px;
+}
+
+.intro-title .b-title {
+  display: block;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.intro-title .b-subtitle {
+  color: #4caf50;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.intro-title span {
+  display: inline;
+  font-size: 24px;
+  color: black;
+  line-height: 36px;
+}
+
+.intro-title p {
+  line-height: 24px;
+  color: black;
+  margin: 16px 0;
+  text-align: justify;
+}
+
+.intro-title .fa-android {
+  color: #4caf50;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.intro-title .fa-apple {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.intro-title .fa-windows {
+  color: #2196f3;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.intro-title button {
+  border-style: none;
+  display: inline-block;
+  background-color: #eeeeeeab;
+  align-items: flex-start;
+  line-height: 24px;
+  margin: 16px 0;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.intro-title button:hover {
+  background-color: #cccccc;
+}
+
+.intro-img {
+  float: left;
+  width: 40%;
+  margin-right: 16px;
+}
+
+.intro-img img {
+  /* margin-right: 16px; */
+  float: right;
+}
+
+/* .intro .intro-title p {
+    color: black;
+}
+
+.intro-title span {
+    font-size: 30px;
+} */
+
+/* Clarity */
+
+.clarity {
+  width: 100%;
+  padding-top: 64px;
+  background-color: #f1f1f1;
+  display: flex;
+}
+
+.clarity-img {
+  margin: 0 16px 0 16px;
+  padding: 0 152px 0 8px;
+}
+
+.clarity-img img {
+  margin-left: -8px;
+  border-radius: 8px;
+}
+
+.clarity-info .clarity-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  display: block;
+}
+
+.clarity-info .clarity-subtitle {
+  color: #f44336;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.clarity-info span {
+  font-size: 24px;
+  color: black;
+  line-height: 36px;
+}
+
+.clarity-info p {
+  margin: 16px 16px 16px 0;
+  line-height: 24px;
+  color: black;
+  text-align: justify;
+}
+
+/* Features */
+.feature {
+  width: 100%;
+  padding-top: 64px;
+  background-color: #616161;
+}
+
+.feature-intro {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.feature-intro .feature-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.feature-intro .feature-p {
+  line-height: 24px;
+  margin: 16px 0;
+}
+
+.feature-details .grid-feature-details {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #616161;
+  padding: 10px;
+}
+
+.feature-details .grid-item {
+  border-style: none;
+  font-size: 30px;
+  text-align: center;
+  margin: 64px 16px 64px 16px;
+}
+
+.grid-item .fa-bolt-lightning {
+  color: #ff9800;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-heart {
+  color: #f44336;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-camera {
+  color: #d2be0e;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-battery-full {
+  color: #4caf50;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-gem {
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-cloud {
+  color: #2196f3;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-earth-americas {
+  color: #ffc107;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-hard-drive {
+  color: #00bcd4;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-user {
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-shield {
+  color: #ff9800;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-wifi {
+  color: #757575;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item .fa-image {
+  color: #e91e63;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.grid-item p {
+  margin: 16px 0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+/* Pricing */
+.pricing {
+  width: 100%;
+  padding: 64px 0;
+}
+
+.pricing-title .pricing-title-p {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  text-align: center;
+  color: black;
+}
+
+.pricing-title .pricing-info-p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 18px 0;
+  text-align: center;
+  color: black;
+}
+
+.pricing .price-list-container {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.first-list,
+.second-list {
+  margin: 16px 0px;
+  padding: 0px 8px;
+  text-align: center;
+  width: 50%;
+}
+
+.price-list-container ul {
+  list-style-type: none;
+}
+
+.price-list-container .list1 {
+  background-color: #616161;
+  color: #ffffff;
+  display: list-item;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.price-list-container .list2,
+.list3,
+.list4,
+.list5,
+.list6,
+.list7 {
+  display: list-item;
+  line-height: 24px;
+  padding: 16px;
+  text-align: center;
+  border-style: groove;
+  border-top-style: none;
+  border-width: 1px;
+}
+
+.price-list-container .list6 h2 {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 10px 0;
+  font-weight: lighter;
+  color: #757575;
+}
+
+.price-list-container .list7 button {
+  line-height: 24px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #000000;
+  color: #eeeeee;
+}
+
+.price-list-container .list7 button:hover {
+  line-height: 24px;
+  padding: 12px 24px;
+  background-color: #cccccc;
+  font-size: 18px;
+  color: #eeeeee;
+}
+
+.price-list-container .list1-2 {
+  background-color: #f44336;
+  color: #ffffff;
+  display: list-item;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.price-list-container .list2-2,
+.list3-2,
+.list4-2,
+.list5-2,
+.list6-2,
+.list7-2 {
+  display: list-item;
+  line-height: 24px;
+  padding: 16px;
+  text-align: center;
+  border-style: groove;
+  border-top-style: none;
+  border-width: 1px;
+}
+
+.price-list-container .list6-2 h2 {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 10px 0;
+  font-weight: lighter;
+  color: #757575;
+}
+
+.price-list-container .list7-2 button {
+  line-height: 24px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: #eeeeee;
+}
+
+.price-list-container .list7-2 button:hover {
+  line-height: 24px;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #cccccc;
+  color: #eeeeee;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 64px 0 0 0;
+}
+
+.footer .section-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .fa-facebook,
+.fa-instagram,
+.fa-snapchat,
+.fa-pinterest,
+.fa-twitter,
+.fa-linkedin {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 6px;
+}
+
+.footer .powered-text p {
+  font-size: 15px;
+  color: #000000;
+  margin: 15px 0;
+}
